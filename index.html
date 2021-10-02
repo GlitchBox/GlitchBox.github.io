@@ -114,7 +114,7 @@
         mdi-av-equalizer
         -->
         <a aria-label="Navigate to the Skills section" href="#software_projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Software Projects</span></a>
+            class="mdi-action-assessment small"></i><span>Projects</span></a>
       </li>
       
       <li class="bold">
@@ -181,7 +181,7 @@
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Skills section" href="#software_projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Software Projects</span></a>
+            class="mdi-action-assessment small"></i><span>Projects</span></a>
       </li>
 
       <li class="bold">
@@ -210,9 +210,9 @@
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
               <h2>Hi, I'm <span class="teal">Syed Zami-Ul-Haque Navid</span></h2>
-              <h5 style="color:#fff">
+              <h5 id="typing_header" style="color:#fff">
                 <!-- <span class="typing" style="font-weight: 300; color:#004d40"></span> -->
-                <span class="typing" style="font-weight: 300; color:#fff"></span>
+                <span id="typing_span" class="typing" style="font-weight: 300; color:#fff"></span>
               </h5>
               <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
               <h5>An aspiring engineer passionate about solving real-world problems</h5>
@@ -915,12 +915,26 @@
   <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Software Engineer", "AI enthusiast", "Aspiring Researcher"],
+    var scrollArray = ["Software Engineer", "AI enthusiast", "Aspiring Researcher"]
+    var typed = new Typed('#typing_span',{
+      strings: scrollArray,
       loop: true,
       typeSpeed: 80,
-      backSpeed: 40
+      backSpeed: 40,
+      preStringType: (arrayPos, self) => {
+        changeTypingArticle(scrollArray, arrayPos);
+      }
     });
+  </script>
+
+  <script>
+    function changeTypingArticle(scrollArray, arrayPos){
+      var vowels = ["a","e","i","o","u"];
+      if(vowels.includes(scrollArray[arrayPos].charAt(0).toLowerCase()))
+        $("#typing_header").text("An ");
+      else
+      $("#typing_header").text("A ");
+    }
   </script>
 
 
