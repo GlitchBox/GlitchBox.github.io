@@ -229,7 +229,7 @@ dt {
 
 ul.side-nav {
   width: 190px;
-  background-color: rgb(175,175,225)
+  background-color: rgb(210,230,250)
 }
 
 ul.side-nav li {
@@ -365,7 +365,7 @@ h3 {
 }
 
 .overlay {
-  background-color: rgba(235, 235, 255, 0.98);
+  background-color: rgba(240, 240, 255, 0.98);
   height: 100%;
   left: 0;
   position: fixed;
