@@ -149,7 +149,7 @@ body {
 } */
 
 a {
-  color: #004d40;
+  color: rgba(30,30,255,1);
 }
 
 /* main blockqoute */
@@ -209,7 +209,6 @@ nav i {
 } */
 
 main {
-  background: url(../../assets/img/bg.png) repeat;
   padding-left: 190px;
 }
 
@@ -230,7 +229,7 @@ dt {
 
 ul.side-nav {
   width: 190px;
-  background-color: rgba(100,100,200,0.1)
+  background-color: rgb(175,175,225)
 }
 
 ul.side-nav li {
@@ -267,7 +266,7 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
 } */
 
 ul.side-nav.fixed li.logo {
-  background-color: rgba(30,30,60,0.6);
+  background-color: rgb(50,50,100);
   border-bottom: 1px solid #ddd;
   box-sizing: content-box;
   min-height: 90px;
@@ -487,7 +486,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid rgba(30,30,255,1) !important;
 }
 
 #skills .card.large {
