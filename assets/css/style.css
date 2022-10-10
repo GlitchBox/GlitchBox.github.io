@@ -152,6 +152,14 @@ a {
   color: rgba(30,30,255,1);
 }
 
+#interests ul li {
+  list-style-type: square;
+}
+
+#interests ul li ul li{
+  list-style-type: circle;
+}
+
 /* main blockqoute */
 
 /* blockquote {
